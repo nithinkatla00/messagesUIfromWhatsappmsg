@@ -1,0 +1,31 @@
+@import '../../styles/_colors';
+
+$message-time-color: darken($accent-color, 46.5%);
+$speech-bubble-border-color: darken($accent-color, 13.18);
+
+.message-row {
+    display: grid;
+    grid-template-columns: 50%;
+    margin-bottom: 20px;
+    min-height: 30px;
+    min-width: 10px;
+    &.you-message {
+        justify-content: end;
+            > .message-text {
+                background: $primary-color;
+                color: $contrasted-primary-text;
+                border: 2px solid $primary-color;
+                border-radius: 14px 14px 0 14px;
+            }
+    }
+
+    &.other-message {
+        justify-items: start;
+            > .message-text {
+                background: $accent-color;
+                color: $contrasted-accent-text;
+                border: 2px solid $speech-bubble-border-color;
+                border-radius: 14px 14px 14px 0;
+            }
+    }
+}

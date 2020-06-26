@@ -1,0 +1,16 @@
+@import '../../../styles/_colors';
+
+#conversation-list {
+    grid-area: conversation-list;
+    background: $primary-color;
+}
+#message{
+    background-color:gainsboro;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 12%;
+    text-align: center;
+    border-radius: 5px;
+}
